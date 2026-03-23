@@ -45,3 +45,7 @@ AI-generated or pasted text often lacks these characteristics.
 cd backend
 npm install
 node server.js
+cd frontend
+npm install
+npm start
+
