@@ -1,167 +1,159 @@
+# ✍️ Vi-Notes
 
-# Vi-Notes ✍️
+Vi-Notes is an authenticity verification platform that analyzes keystroke dynamics, typing patterns, and behavioral signals to distinguish human-written content from AI-generated text.
 
-Vi-Notes is an authenticity verification platform designed to distinguish human-written content from AI-generated or AI-assisted text. It achieves this by analyzing real-time typing behavior, keystroke dynamics, and writing patterns.
+---
 
 ## 🚀 Overview
 
-The system captures how users write — not just what they write. By monitoring typing rhythm, pauses, corrections, and paste activity, Vi-Notes builds a behavioral signature that reflects natural human thinking patterns.
+Vi-Notes focuses on *how* users write rather than just *what* they write.
+
+By monitoring typing rhythm, pauses, corrections, and paste activity, the system builds a behavioral signature that reflects natural human thinking patterns.
+
+---
 
 ## 🔑 Key Features
 
 - ✍️ Distraction-free writing editor  
 - ⌨️ Keystroke dynamics tracking (latency & hold time)  
-- 📋 Paste detection for suspicious input  
-- 📊 Real-time behavioral insights visualization  
-- 💾 Session storage using MongoDB  
-- 🔐 (Optional) User authentication system  
+- 📋 Paste detection  
+- 📊 Behavioral insights visualization  
+- 💾 Session storage  
+- 🔐 Optional authentication  
+
+---
 
 ## 🧠 How It Works
 
 - Captures typing speed and timing variations  
-- Detects micro-pauses and corrections  
-- Flags pasted content instantly  
-- Compares behavioral patterns with statistical signals  
+- Detects pauses and corrections  
+- Flags pasted content  
+- Analyzes behavior patterns  
 
-Human writing typically shows:
-- Irregular timing patterns  
+### Human writing:
+- Irregular timing  
 - Frequent corrections  
-- Variable typing speed  
+- Natural pauses  
 
-AI-generated or pasted text often lacks these characteristics.
+### AI / pasted content:
+- Uniform timing  
+- Minimal corrections  
+- Instant text input  
+
+---
 
 ## 🛠️ Tech Stack
 
-- **Frontend:** React  
-- **Backend:** Node.js, Express  
-- **Database:** MongoDB  
-- **Libraries:** Axios  
-# 🚀 React + Vite + TypeScript Project
-
-This is a modern web application built using React, Vite, and TypeScript.
+- Frontend: React (Create React App)  
+- Backend: Node.js + Express  
+- Database: MongoDB  
+- Libraries: Axios  
 
 ---
 
 ## 📦 Prerequisites
 
-Make sure you have the following installed:
+Make sure you have installed:
 
-- Node.js (LTS recommended)
-- npm (comes with Node.js)
+- Node.js (LTS recommended)  
+- npm  
 
-Check installation:
+Check:
 
-node -v
-npm -v
-
----
-
-## 📁 Getting Started
-
-### 1. Clone the Repository
-
-git clone https://github.com/your-username/your-repo.git
-cd your-repo
-
-Or download the ZIP file and extract it.
-
----
-
-### 2. Install Dependencies
-
-Make sure you are inside the project folder (where package.json exists), then run:
-
-npm install
-
----
-
-### 3. Run the Development Server
-
-npm run dev
-
----
-
-### 4. Open in Browser
-
-After running the above command, you will see output like:
-
-Local: http://localhost:5173/
-
-Open that link in your browser.
-
----
-
-## 🔐 Environment Variables
-
-If the project requires environment variables:
-
-1. Copy the example file:
-
-cp .env.example .env
-
-2. Open .env and add the required values.
-
----
-
-## 🏗️ Build for Production
-
-To create a production build:
-
-npm run build
-
-To preview the build:
-
-npm run preview
+node -v  
+npm -v  
 
 ---
 
 ## 📁 Project Structure
 
-project-root/
-├── src/                # Source code
-├── public/             # Static files
-├── package.json        # Dependencies & scripts
-├── vite.config.ts      # Vite configuration
-├── .env.example        # Environment template
-└── README.md           # Documentation
+project-root/  
+├── frontend/   # React app  
+├── backend/    # Node.js server  
+├── README.md  
 
 ---
 
-## ❗ Common Issues & Fixes
+## 🚀 How to Run the Project
 
-### package.json not found
-Make sure you are inside the correct project folder.
+### 1. Clone Repository
+
+git clone https://github.com/your-username/your-repo.git  
+cd your-repo  
+
+---
+
+## ▶️ Run Frontend
+
+cd frontend  
+npm install  
+npm start  
+
+Frontend runs on:
+http://localhost:3000  
+
+---
+
+## ▶️ Run Backend
+
+Open a new terminal:
+
+cd backend  
+npm install  
+npm start  
+
+Backend typically runs on:
+http://localhost:5000  
+
+---
+
+## 🔐 Environment Variables
+
+If required:
+
+- Check `.env.example` in frontend/backend  
+- Create `.env` file  
+- Add required values  
+
+---
+
+## ❗ Common Issues
+
+### Blank white screen
+- Check browser console (F12)  
+- Ensure backend is running  
+- Check API URLs  
+
+---
 
 ### Port already in use
-npm run dev -- --port 3000
+Frontend:
+npm start -- --port 3001  
 
-### Dependencies not installed
-npm install
-
-### Environment errors
-Ensure .env file is created and properly configured.
+Backend:
+Change port in server file  
 
 ---
 
-## 🧑‍💻 Tech Stack
+### Dependencies error
+npm install  
 
-- React
-- TypeScript
-- Vite
-- Node.js
+---
+
+### API not working
+- Ensure backend is running  
+- Check API URL (localhost:5000)  
 
 ---
 
 ## 📌 Notes
 
-- Always run commands inside the project folder
-- Do not modify core config files unless needed
-- Ensure Node.js is properly installed
+- Run frontend and backend in separate terminals  
+- Always run commands inside respective folders  
+- Do not delete `.env.example`  
 
 ---
 
 ## 📜 License
 
 This project is open-source and available under the MIT License.
-
-
