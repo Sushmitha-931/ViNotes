@@ -1,5 +1,4 @@
-# ViNotes
-Vi-Notes is an authenticity verification platform that analyzes keystroke dynamics, typing patterns, and behavioral signals to distinguish human-written content from AI-generated text.
+
 # Vi-Notes ✍️
 
 Vi-Notes is an authenticity verification platform designed to distinguish human-written content from AI-generated or AI-assisted text. It achieves this by analyzing real-time typing behavior, keystroke dynamics, and writing patterns.
