@@ -37,15 +37,132 @@ AI-generated or pasted text often lacks these characteristics.
 - **Backend:** Node.js, Express  
 - **Database:** MongoDB  
 - **Libraries:** Axios  
+# 🚀 React + Vite + TypeScript Project
 
-## ⚙️ Setup Instructions
+This is a modern web application built using React, Vite, and TypeScript.
 
-### Backend
-```bash
-cd backend
+---
+
+## 📦 Prerequisites
+
+Make sure you have the following installed:
+
+- Node.js (LTS recommended)
+- npm (comes with Node.js)
+
+Check installation:
+
+node -v
+npm -v
+
+---
+
+## 📁 Getting Started
+
+### 1. Clone the Repository
+
+git clone https://github.com/your-username/your-repo.git
+cd your-repo
+
+Or download the ZIP file and extract it.
+
+---
+
+### 2. Install Dependencies
+
+Make sure you are inside the project folder (where package.json exists), then run:
+
 npm install
-node server.js
-cd frontend
+
+---
+
+### 3. Run the Development Server
+
+npm run dev
+
+---
+
+### 4. Open in Browser
+
+After running the above command, you will see output like:
+
+Local: http://localhost:5173/
+
+Open that link in your browser.
+
+---
+
+## 🔐 Environment Variables
+
+If the project requires environment variables:
+
+1. Copy the example file:
+
+cp .env.example .env
+
+2. Open .env and add the required values.
+
+---
+
+## 🏗️ Build for Production
+
+To create a production build:
+
+npm run build
+
+To preview the build:
+
+npm run preview
+
+---
+
+## 📁 Project Structure
+
+project-root/
+├── src/                # Source code
+├── public/             # Static files
+├── package.json        # Dependencies & scripts
+├── vite.config.ts      # Vite configuration
+├── .env.example        # Environment template
+└── README.md           # Documentation
+
+---
+
+## ❗ Common Issues & Fixes
+
+### package.json not found
+Make sure you are inside the correct project folder.
+
+### Port already in use
+npm run dev -- --port 3000
+
+### Dependencies not installed
 npm install
-npm start
+
+### Environment errors
+Ensure .env file is created and properly configured.
+
+---
+
+## 🧑‍💻 Tech Stack
+
+- React
+- TypeScript
+- Vite
+- Node.js
+
+---
+
+## 📌 Notes
+
+- Always run commands inside the project folder
+- Do not modify core config files unless needed
+- Ensure Node.js is properly installed
+
+---
+
+## 📜 License
+
+This project is open-source and available under the MIT License.
+
 
